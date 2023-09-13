@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <section class="actuality">
-
     <?php
     $args = array(
         'post_type' => 'stagiaire',

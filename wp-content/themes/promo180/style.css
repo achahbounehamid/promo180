@@ -255,28 +255,31 @@ Tags: Responsive web design
 
 .actuality-category{
   background-color:  #cfdcd9;
+  display: flex;
+  flex-direction: column;
 }
 .container-text-project p{
   align-items: center;
 }
-/* .actuality-article.container-card-student{
- 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #0073e6;
 
-
-} */
 .container-card-student-article{
-  background-color: rgb(190, 173, 173);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  background-color: rgb(255, 255, 255);
+  
 }
+
+.card-actuality-card{
+
+  display: flex;
+  /* flex-wrap: nowrap; */
+  justify-content: space-around;
+  align-items: stretch;
+  height: 500px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+ 
+}
+
   @media screen and (max-width: 770px) {
     body .student {
       height: initial;
@@ -1253,4 +1256,21 @@ Tags: Responsive web design
   text-align: center;
   font-size: 50px;
   margin-top: 100px;
+}
+.filter-bar{
+  display: none;
+}
+.actuality-article{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.picture-teamworker p{
+  font-size: 100px;
+}
+.pargraphe-actuality{
+  font-size: 20px;
+  color: red;
 }

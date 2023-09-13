@@ -23,9 +23,11 @@
         <div class="container-card-student" id="pinContainer">
             <h2 class="h2-student">Nos stagiaires</h2>
             <div class="card panel bordeaux carte">
+
                 <div class="picture-profil-student">
-                    <img class="image-student" src="<?php echo get_template_directory_uri(); ?>/assets/picture/hamid-picture.jpg" alt="student image"
-                        class="student_img">
+                   
+                    <a href="http://localhost/php/promo180/stagiaires/" ><img class="image-student" src="<?php echo get_template_directory_uri(); ?>/assets/picture/hamid-picture.jpg" alt="student image"
+                        class="student_img"></a>
                     <div class="profil-student">
                         <div class="name-profesionel">
                             <span>hamid</span>
@@ -63,7 +65,7 @@
     <section class="actuality">
         <h2 class="h2-student">Nos actualités</h2>
         <div class="container-card-student">
-            <a href="./actualités.html">
+            <a href="http://localhost/php/promo180/actualite/">
                 <div class="card-actuality">
                     <div class="picture-teamworker">
                         <img src="<?php echo get_template_directory_uri(); ?>./assets/picture/gitefinder.svg" alt="gitefinder site web ">

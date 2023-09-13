@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="actuality-article">
-    <div class="container-card-student-article">
+        <div class="container-card-student-article">
        
 
             <?php
@@ -19,21 +19,14 @@
                 while ($query->have_posts()) :
                     $query->the_post();
             ?>
-                    <div class="card-actuality">
-                   
-                        <div class="picture-teamworker">
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('thumbnail'); ?>
-                            <div class="teamworker">
-                               
-                                <div class="picture">
-                                    <div class="name-img">
-                                        <div class="img-actuality-dev">
-                                            <?php the_post_thumbnail('thumbnail'); ?>
-                                        </div>
-                                    <!-- Vous pouvez répéter cette section pour chaque membre de l'équipe -->
-                                </div>
-                            </div>
+                    <div class="card-actuality-card">
+                    <?php the_title(); ?>
+                        <div class="picture-teamworker-team">
+                       
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail('thumbnail'); ?>
+                            </a>
+                            <?php the_excerpt(); ?>
                         </div>
                     </div>
 

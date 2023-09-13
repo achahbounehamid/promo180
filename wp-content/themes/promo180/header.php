@@ -40,7 +40,7 @@
         </div> -->
         <header>
         <div class="header-row-limit-size">
-            <a href="./home.html">
+            <a href="http://localhost/php/promo180/">
                 <h1 class="logo">ÉclatDev<span>180</span></h1>
             </a>
             <div class="nav-burger">

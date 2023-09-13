@@ -3,7 +3,7 @@
 
 <!--page stagiaire-->
 <section class="actuality-category">
-    <h2 class="h2-student">Nos actualités</h2>
+   
     <div class="categories-container">
 
         
@@ -14,6 +14,8 @@
                         <div class="scroll-cat">
                             <?php $categories = get_categories(); ?>
                             <?php if ($categories) : ?>
+
+                                
                                 <ul>
                                     <?php foreach ($categories as $category) : ?>
                                         <li>
@@ -56,7 +58,8 @@
                     <a href="<?php the_permalink(); ?>">
                         <div class="card-actuality">
                             <div class="picture-teamworker">
-                                <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
+                            <h1>Project <?php the_title() ?></h1>
+                                <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>">
                                 <div class="teamworker">
                                     <div class="picture">
                                         <?php
@@ -68,10 +71,7 @@
                                                 $image_url = wp_get_attachment_image_src($image->ID, 'thumbnail');
                                                 $image_alt = get_post_meta($image->ID, '_wp_attachment_image_alt', true);
                                         ?>
-                                                <div class="name-img">
-                                                    <div class="img-actuality-dev">
-                                                        <img src="<?php echo esc_url($image_url[0]); ?>" alt="<?php echo esc_attr($image_alt); ?>">
-                                                    </div>
+                                               
                                                     <!-- <span>Karim</span> -->
                                                 </div>
 
@@ -85,7 +85,7 @@
                                 </div>
                             </div>
                             <div class="container-text-project">
-                                <h1>Project <?php the_title() ?></h1>
+                                
                                 <div class="paragraphe-name-date-arrow">
                                     <p class="pargraphe-actuality">“<?php the_excerpt(); ?>”</p>
                                     

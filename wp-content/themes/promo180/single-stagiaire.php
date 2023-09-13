@@ -3,7 +3,6 @@
 
 
 <section class="actuality">
-
     <h2 class="h2-student"><?php the_title() ?></h2>
     <div class="container-card-student">
         <?php
